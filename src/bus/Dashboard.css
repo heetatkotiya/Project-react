@@ -1,0 +1,143 @@
+/* Ensure full screen usage */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 270px;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.logo .green {
+  color: #22c55e;
+}
+
+/* Profile */
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-icon {
+  background-color: #2e2e2e;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-role {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #22c55e;
+  transition: 0.3s;
+}
+
+.nav-item .icon {
+  margin-right: 10px;
+}
+
+.nav-item:hover {
+  background-color: #333;
+}
+
+.nav-item.active {
+  background-color: white;
+  color: #22c55e;
+}
+
+.logout {
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card-icon {
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.card-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #22c55e;
+  margin-top: 5px;
+}

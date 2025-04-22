@@ -1,0 +1,161 @@
+/* seat.css */
+.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  width:1500px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #4CAF50;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.reservation-container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #4CAF50;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seats-container {
+  width: 20%;
+  left: 200px;
+  position: relative;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.seat {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.seat.reserved {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color:#009151;
+  color: white;
+}
+
+.seat.booked {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+.legend {
+  margin-top: 20px;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+}
+
+.available-box, .reserved-box, .booked-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.available-box {
+  background-color: #ccc;
+}
+
+.reserved-box {
+  background-color: red;
+}
+
+.booked-box {
+  background-color: #009151;
+}
+
+.bus-details {
+  width: 40%;
+}
+
+.bus-details p {
+  margin: 10px 0;
+}
+
+.confirm-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #D9D9D9;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 40%;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.subscribe-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
